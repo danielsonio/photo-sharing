@@ -1,0 +1,19 @@
+.item {
+    background: white;
+    border: 1px solid $item-border;
+    margin-bottom: $space;
+    object-fit: cover;
+    padding: $space;    
+    width: 430px;
+
+}
+
+
+.item__time{
+    color: $grey;
+    font-size: 1.2rem;
+}
+
+.heart-black{
+    color: black;
+}

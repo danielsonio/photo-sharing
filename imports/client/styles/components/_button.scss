@@ -1,0 +1,70 @@
+.button {
+    background-color: $button-bg;
+    border: none;
+    color: $button-color;
+    cursor: pointer;
+    font-size: $base-font-size;
+    line-height: 1.2;
+    margin-bottom: $space;
+    padding: $space;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.button:active,
+.button:focus,
+.button.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+
+.button--link {
+    display: inline-block;
+
+}
+
+.button--pill {
+    background-color: transparent;
+    border: 1px solid $button-pill-color;
+    color: $button-pill-color;
+    padding: .3rem .8rem;
+}
+
+.button--secondary {
+    background:$button-secondary-bg;
+    border: 1px solid $button-secondary-border-color;
+    color: $button-secondary-color;
+    margin-top: 3rem;
+
+}
+
+.button--header{
+    background-color: transparent;
+    color: black;
+    padding: .3rem .8rem;
+    text-decoration: none;
+}
+
+.button--heart {
+    background-color: transparent;
+    color: $button-heart-full;
+    padding: .3rem .8rem;
+}
+
+.button--link-text {
+    background: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: none;
+}
+
+
+.glyphicon-picture {
+    font-size: 4.6rem;
+}

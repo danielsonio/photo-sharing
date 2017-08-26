@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: $base-font-size;
+    background-color: $light-grey;
+}
+
+h1 {
+    font-weight: 300;
+    margin-bottom: $space;
+}
+
+h5 {
+    font-weight: 200;
+    margin-bottom: $space;
+}
+
+p {
+    margin-bottom: $space;
+}
+
+a {
+    color: black;
+}
+
+input[type=text], input[type=email], input[type=password] {
+    border: $input-spacing solid $input-border;
+    font-size: $base-font-size;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+img {
+    margin-top: .5rem;
+    margin-right: .5rem;
+    padding: 1rem;
+    width: 400px;
+}
