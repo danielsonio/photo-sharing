@@ -6,6 +6,11 @@ import {Tracker} from 'meteor/tracker';
 
 export const Links = new Mongo.Collection('links');
 
+export const Key = {
+    preset: "hc706trd",
+    secret: "185781642888421"
+}
+
 
 if (Meteor.isServer) {
     Meteor.publish('links', function () {

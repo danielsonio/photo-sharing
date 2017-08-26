@@ -21,6 +21,9 @@
           box-shadow: none;
 }
 
+.button--drop{
+ 
+}
 
 .button--link {
     display: inline-block;
@@ -64,7 +67,20 @@
     text-transform: none;
 }
 
+.glyphicon {
+    font-size: 2rem;
+    color: $brand-primary;
+}
 
 .glyphicon-picture {
-    font-size: 4.6rem;
+    color: $brand-primary;
+    font-size: 8rem;
 }
+
+
+.drop--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

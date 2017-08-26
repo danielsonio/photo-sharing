@@ -4,6 +4,7 @@ import Modal from 'react-modal';
 import Dropzone from 'react-dropzone';
 import axios from 'axios';
 
+import { Key } from '../api/links';
 
 export default class AddLink extends React.Component {
   constructor(props) {
@@ -23,8 +24,8 @@ export default class AddLink extends React.Component {
       // Initial FormData
       const formData = new FormData();
       formData.append("file", file);
-      formData.append("upload_preset", "rc706trr"); // Replace the preset name with your own
-      formData.append("api_key", "587265413147528"); // Replace API key with your own Cloudinary key
+      formData.append("upload_preset", Key.preset); // Replace the preset name with your own
+      formData.append("api_key", Key.secret); // Replace API key with your own Cloudinary key
       formData.append("timestamp", (Date.now() / 1000) | 0);
       
       // Make an AJAX upload request using Axios (replace Cloudinary URL below with your own)
@@ -62,7 +63,7 @@ export default class AddLink extends React.Component {
   render() {
     return (
       <div>
-        <button className="button button--header" onClick={() => this.setState({isOpen: true})}><span className="glyphicon glyphicon-picture"></span></button>
+        <button className="button button--header button--drop" onClick={() => this.setState({isOpen: true})}><span className="glyphicon glyphicon-picture"></span></button>
         <Modal
           isOpen={this.state.isOpen}
           contentLabel="Add picture"
