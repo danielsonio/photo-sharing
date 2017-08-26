@@ -12,7 +12,7 @@ import DropFile from './DropFile';
 export default () => {
   return(
     <div>
-        <PrivateHeader header={"your pictures"}/>
+        <PrivateHeader/>
         <div className="page-content">
           <div className='drop--center'>
             <DropFile/>

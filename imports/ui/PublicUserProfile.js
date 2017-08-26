@@ -1,5 +1,4 @@
 import React from 'react';
-
 import PublicHeader from'./PublicHeader';
 import PublicUserProfileList from './PublicUserProfileList';
 

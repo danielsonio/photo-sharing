@@ -7,6 +7,7 @@ import Link from '../ui/Link';
 import NotFound from '../ui/NotFound';
 import Login from '../ui/Login';
 import Home from '../ui/Home';
+import PrivateHeader from '../ui/PrivateHeader';
 import PublicUserProfile from '../ui/PublicUserProfile';
 
 const unauthenticatedPages = ['/login', '/signup'];

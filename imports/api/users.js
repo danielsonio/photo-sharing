@@ -2,6 +2,14 @@ import { Meteor } from 'meteor/meteor';
 import SimpleSchema from 'simpl-schema';
 import { Accounts } from 'meteor/accounts-base';
 
+if (Meteor.isServer) {
+    Meteor.publish('users', function () {
+        
+        return Users.find({});
+    });
+
+
+}
 
 
 Accounts.validateNewUser((user) => {

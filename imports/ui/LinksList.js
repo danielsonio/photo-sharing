@@ -36,7 +36,7 @@ export default class LinksList extends React.Component {
         if (this.state.links.length === 0) {
             return (
                 <div className="item">
-                    <p>No unpublished pictures.</p>
+                    <p>Hello. Click the orange mountain when you're ready to upload pics. Pics will stay hidden until you publish them.</p>
                 </div>
             );
         }

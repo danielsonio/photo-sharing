@@ -6,18 +6,14 @@ const PrivateHeader = (props) => {
     return(
         <div className="header">
             <div className="header__content">
-                <h1 className="header__title">{props.header}</h1> 
                 
                 <button className="button button--link-text" ><a href="/" className="button button--header"><span className="glyphicon glyphicon-th-large"></span></a></button> 
-                <button className="button button--link-text" onClick={() => Accounts.logout()}>logout</button>        
+                <button className="button button--link-text" onClick={() => Accounts.logout()}>Logout</button>        
             </div>   
         </div>
     )
     
 }
 
-PrivateHeader.propTypes = {
-    header: React.PropTypes.string.isRequired
-};
 
 export default PrivateHeader;

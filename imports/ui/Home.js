@@ -6,7 +6,7 @@ import PublicLinksList from './PublicLinksList.js'
 export default () => {
     return(
         <div>
-            <PublicHeader header="PHOTO SHARING"/>
+            <PublicHeader header="Photo Sharing"/>
             <div className="page-content">
                 <PublicLinksList/>
             </div> 
