@@ -40,28 +40,31 @@ export default class PublicLinksListItem extends React.Component {
         }
 
     }
-    renderFavorites(){
-        let favorites = this.props.favorites;
-        let userLikes = false;
-        for (let i = 0; i < favorites.length; i++) {
-            if (favorites[i]===Meteor.user()._id) {
-                userLikes = true;
+    renderFavorites() {
+        if (Meteor.user()) {
+            let favorites = this.props.favorites;
+            let userLikes = false;
+            for (let i = 0; i < favorites.length; i++) {
+                if (favorites[i]===Meteor.user()._id) {
+                    userLikes = true;
+                }
+            }
+    
+            if (favorites.length === 0) {
+                return <p>Be the first person to like this</p>
+            } else if (userLikes && favorites.length === 1){
+                return <p>You like this</p>
+            } else if (userLikes && favorites.length === 2) {
+                return <p>You and one other person like this</p>
+            } else if (userLikes) {
+                return <p>You and {favorites.length - 1} other people like this </p>
+            } else if (!userLikes && favorites.length===1){
+                return <p>One person likes this</p>
+            } else {
+                return <p> {favorites.length} people like this</p>
             }
         }
 
-        if (favorites.length === 0) {
-            return <p>Be the first person to like this</p>
-        } else if (userLikes && favorites.length === 1){
-            return <p>You like this</p>
-        } else if (userLikes && favorites.length === 2) {
-            return <p>You and one other person like this</p>
-        } else if (userLikes) {
-            return <p>You and {favorites.length - 1} other people like this </p>
-        } else if (!userLikes && favorites.length===1){
-            return <p>One person likes this</p>
-        } else {
-            return <p> {favorites.length} people like this</p>
-        }
     }
     renderTime() {
         let createdAt = moment(this.props.createdAt).fromNow();
