@@ -5,5 +5,5 @@ A social sharing site where users can publish and view other pictures in their n
 Photo Sharing is built on the Meteor framework which powers user authentication and MongoDB queries. The entire front end is built with React - including the React-Dropzone npm package for image uploads. Images are stored in the cloud storage application Cloudinary and their urls are saved in their MongoDB documents.
 
 Cloudinary: https://cloudinary.com/ <br/>
-Meteor: https://www.meteor.com/
+Meteor: https://www.meteor.com/ <br/>
 React: https://facebook.github.io/react/
